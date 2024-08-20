@@ -1,0 +1,9 @@
+services:
+  kintree:    
+    build:
+      context: ./
+    ports:
+      - 8754:8754 # host:internal
+    volumes:
+      - ./kintree:/root/.config/kintree # you can change "./kintree" to whatever you like.
+ 
